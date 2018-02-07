@@ -15,6 +15,7 @@ Plugin 'vim-scripts/auto-pairs-gentle'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'benmills/vimux'
+Plugin 'leafgarland/typescript-vim'
 
 
 cal vundle#end()
@@ -64,8 +65,6 @@ cnoremap w!! w !sudo tee > /dev/null %
 highlight StatusLine ctermfg=Blue ctermbg=White
 highlight StatusLineNC ctermfg=Blue ctermbg=White
 
-
-execute pathogen#infect()
 au BufRead,BufNewFile *.ts setfiletype typescript
 
 " Prompt command
